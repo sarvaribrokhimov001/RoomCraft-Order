@@ -36,3 +36,28 @@ document.querySelector('.index__previous__btn').addEventListener('click', () => 
 document.querySelector('.index__next__btn').addEventListener('click', () => {
   window.location.href = 'document.html'; 
 });
+
+
+
+
+
+
+
+
+
+
+
+const xScroll = document.getElementById("xScroll");
+const xNext = document.getElementById("xNext");
+const xPrev = document.getElementById("xPrev");
+
+const scrollAmount = 360;
+
+xNext.addEventListener("click", () => {
+  xScroll.scrollBy({ left: scrollAmount, behavior: "smooth" });
+});
+
+xPrev.addEventListener("click", () => {
+  xScroll.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+});
+

@@ -1,31 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  background-color: #000;
 }
 
 .navbar {
-    width: 100%;
-    height: 110px;
-    margin: auto;
-    background-color: #000;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  max-width: 1400px;          
+  margin: auto;
+  height: 110px;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  color: white;
 }
 
 .navbar__logo {
-    font-size: 35px;
+  font-size: 35px;
+  flex: 1;
 }
 
 .navbar__input {
@@ -43,12 +50,14 @@ a {
 }
 
 .navbar__links {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  justify-content: center;
 }
 
 .navbar__link {
-    color: white;
+  color: white;
 }
 
 .navbar__link:hover {
@@ -116,12 +125,137 @@ a {
 }
 
 .intro {
-    width: 100%;
-    height: 600px;
-    background-image: url(../images/image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  min-height: 70vh;               
+  background-image: url(../images/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;         
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro__title {
+  font-size: 60px;
+  color: rgb(72, 67, 67);
+}
+
+.intro__btn {
+  width: 170px;
+  height: 50px;
+  border-radius: 14px;
+  margin: 20px 0px;
+  font-size: 18px;
+  color: white;
+  border: 6px solid white;
+  background-color: blue;
+}
+
+.intro__btn:hover {
+  background-color: white;
+  color: blue;
+  border: 6px solid blue;
+  transition: all 1s ease;
+}
+
+.intro__btn:active {
+  background-color: #000;
+  color: cyan;
+  border: 4px solid cyan;
+}
+
+
+
+
+
+
+
+
+.x-scroll-section {
+  position: relative;
+  padding: 50px 0;
+}
+
+/* MUHIM QISM */
+.x-scroll-wrapper {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  max-width: 1200px;   /* SCROLL MAJBURIY */
+  margin: auto;
+  padding: 10px 0;
+}
+
+.x-scroll-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.x-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+/* CARD */
+.x-card {
+  min-width: 320px;    /* SIG‘MAYDI */
+  text-align: center;
+  flex-shrink: 0;      /* MUHIM */
+}
+
+.x-card img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.x-card p {
+  margin-top: 14px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+/* BUTTONS */
+.x-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.x-left {
+  left: 20px;
+}
+
+.x-right {
+  right: 20px;
+}
+
+.x-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .x-card {
+    min-width: 260px;
+  }
+
+  .x-card img {
+    height: 320px;
+  }
 }
 
 
@@ -136,12 +270,17 @@ a {
 
 
 
-@media (max-width: 500px) {
+
+
+
+
+
+@media (max-width: 768px) {
   .navbar {
     height: auto;
-    padding: 15px;
     flex-direction: column;
     gap: 15px;
+    padding: 20px;
   }
 
   .navbar__logo {
@@ -150,36 +289,34 @@ a {
 
   .navbar__input {
     width: 100%;
-    height: 38px;
-    font-size: 16px;
+    max-width: 300px;
   }
 
   .navbar__links {
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .navbar__link {
-    font-size: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .index__paginations {
+    margin-left: 0;
     width: 100%;
-    padding: 20px;
-    gap: 15px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar__links {
     flex-direction: column;
+    gap: 12px;
   }
 
   .index__previous__btn,
   .index__next__btn {
     width: 100%;
     height: 40px;
-    font-size: 16px;
   }
 
   .intro {
-    height: 300px;
-    background-position: center;
+    min-height: 45vh;
   }
 }
