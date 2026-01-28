@@ -179,14 +179,13 @@ nav {
   padding: 50px 0;
 }
 
-/* MUHIM QISM */
 .x-scroll-wrapper {
   display: flex;
   gap: 30px;
   overflow-x: auto;
   scroll-behavior: smooth;
 
-  max-width: 1200px;   /* SCROLL MAJBURIY */
+  max-width: 1200px;   
   margin: auto;
   padding: 10px 0;
 }
@@ -200,11 +199,10 @@ nav {
   border-radius: 10px;
 }
 
-/* CARD */
 .x-card {
-  min-width: 320px;    /* SIG‘MAYDI */
+  min-width: 320px;   
   text-align: center;
-  flex-shrink: 0;      /* MUHIM */
+  flex-shrink: 0;   
 }
 
 .x-card img {
@@ -220,7 +218,6 @@ nav {
   letter-spacing: 2px;
 }
 
-/* BUTTONS */
 .x-btn {
   position: absolute;
   top: 50%;
@@ -228,7 +225,9 @@ nav {
   width: 42px;
   height: 42px;
   border: none;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: black;
+  /* color: white; */
+  border-radius: 15px;
   font-size: 22px;
   cursor: pointer;
   z-index: 10;
@@ -238,8 +237,18 @@ nav {
   left: 20px;
 }
 
+.x-left:hover {
+  border: 5px solid red;
+  transition: all 0.3s ease;
+}
+
 .x-right {
   right: 20px;
+}
+
+.x-right:hover {
+  border: 5px solid green;
+  transition: all 0.3s ease;
 }
 
 .x-btn:hover {
@@ -247,7 +256,6 @@ nav {
   color: #fff;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .x-card {
     min-width: 260px;
@@ -258,6 +266,87 @@ nav {
   }
 }
 
+
+
+.layers {
+  width: 100%;
+  height: 1100px;
+  background-image: url(../images/layers.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+
+.layers__container {
+  margin: 100px;
+}
+
+.layers__title {
+  font-size: 20px;
+  margin: 8px 20px;
+}
+
+.layers__text {
+  font-size: large;
+  margin: 0px 20px;
+}
+
+.outdoor {
+  width: 100%;
+  height: 1000px;
+  background-image: url(https://assets.pbimgs.com/pbimgs/rk/images/dp/ecm/202605/1210/001/003.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.outdoor__title {
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin: 40px 0px;
+}
+
+.outdoor__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.outdoor__btn {
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  color: rgb(74, 71, 71);
+}
+
+.outdoor__btn:hover {
+  background-color: #000;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.outdoor__btn:active {
+  background-color: #000;
+  color: red;
+}
+
+.outdoor__texts {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+}
 
 
 
