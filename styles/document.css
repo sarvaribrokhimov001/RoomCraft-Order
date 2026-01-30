@@ -267,15 +267,7 @@ nav {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .x-card {
-    min-width: 260px;
-  }
 
-  .x-card img {
-    height: 320px;
-  }
-}
 
 
 
@@ -579,50 +571,152 @@ nav {
 
 
 
+@media (max-width: 500px) {
 
+  /* body + navbar */
+  body {
+    padding-top: 190px;
+  }
 
-@media (max-width: 768px) {
+  nav {
+    position: fixed;
+  }
+
   .navbar {
-    height: auto;
     flex-direction: column;
+    height: auto;
     gap: 15px;
-    padding: 20px;
+    padding: 20px 15px;
+    text-align: center;
   }
 
   .navbar__logo {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .navbar__input {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+    height: 36px;
   }
 
-  .navbar__links {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .index__paginations {
-    margin-left: 0;
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 500px) {
+  /* links */
   .navbar__links {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .navbar__link {
+    font-size: 16px;
+  }
+
+  /* pagination buttons */
+  .index__paginations {
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
   }
 
   .index__previous__btn,
   .index__next__btn {
     width: 100%;
-    height: 40px;
+    height: 42px;
+    font-size: 15px;
   }
 
+  /* intro */
   .intro {
     min-height: 45vh;
   }
+
+  .intro__title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .intro__btn {
+    width: 140px;
+    height: 44px;
+    font-size: 15px;
+  }
+
+  /* x-scroll cards */
+  .x-card {
+    min-width: 240px;
+  }
+
+  .x-card img {
+    height: 280px;
+  }
+
+  .x-btn {
+    display: none; /* telefonda swipe yetarli */
+  }
+
+  /* layers */
+  .layers {
+    height: 600px;
+  }
+
+  .layers__container {
+    margin: 40px 20px;
+  }
+
+  /* outdoor */
+  .outdoor {
+    height: 700px;
+  }
+
+  .outdoor__title {
+    font-size: 34px;
+  }
+
+  .outdoor__buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .outdoor__btn {
+    width: 90%;
+    height: 44px;
+  }
+
+  /* h-scroll */
+  .h-card img {
+    width: 260px;
+    height: 300px;
+  }
+
+  .h-btn {
+    display: none;
+  }
+
+  /* collaborations */
+  .collaborations {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .collaborations__cards {
+    flex-direction: column;
+  }
+
+  .collaborations__card {
+    width: 90%;
+    height: auto;
+  }
+
+  .collaborations__card__img {
+    width: 100%;
+  }
+
+  /* footer */
+  .footer__container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
 }
+
+
