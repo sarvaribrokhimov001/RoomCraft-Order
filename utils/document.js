@@ -87,6 +87,31 @@ hPrev.addEventListener("click", () => {
 
 
 
+"use strict";
+
+// search input
+const searchInput = document.querySelector(".navbar__input");
+
+// qidiriladigan cardlar
+const searchableItems = document.querySelectorAll(
+  ".x-card, .h-card, .collaborations__card"
+);
+
+searchInput.addEventListener("input", () => {
+  const value = searchInput.value.toLowerCase().trim();
+
+  searchableItems.forEach(card => {
+    const text = card.innerText.toLowerCase();
+
+    if (text.includes(value)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+
+
 
 
 
