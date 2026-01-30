@@ -413,7 +413,6 @@ nav {
   letter-spacing: 2px;
 }
 
-/* buttons */
 .h-btn {
   position: absolute;
   top: 50%;
@@ -532,14 +531,6 @@ nav {
   font-size: 14px;
 }
 
-
-
-
-
-
-
-
-
 .x-card,
 .h-card,
 .collaborations__card {
@@ -553,27 +544,7 @@ nav {
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 500px) {
-
-  /* body + navbar */
   body {
     padding-top: 190px;
   }
@@ -600,7 +571,6 @@ nav {
     height: 36px;
   }
 
-  /* links */
   .navbar__links {
     flex-direction: column;
     gap: 10px;
@@ -610,7 +580,6 @@ nav {
     font-size: 16px;
   }
 
-  /* pagination buttons */
   .index__paginations {
     width: 100%;
     padding: 15px;
@@ -624,7 +593,6 @@ nav {
     font-size: 15px;
   }
 
-  /* intro */
   .intro {
     min-height: 45vh;
   }
@@ -640,7 +608,6 @@ nav {
     font-size: 15px;
   }
 
-  /* x-scroll cards */
   .x-card {
     min-width: 240px;
   }
@@ -650,10 +617,9 @@ nav {
   }
 
   .x-btn {
-    display: none; /* telefonda swipe yetarli */
+    display: none; 
   }
 
-  /* layers */
   .layers {
     height: 600px;
   }
@@ -662,7 +628,6 @@ nav {
     margin: 40px 20px;
   }
 
-  /* outdoor */
   .outdoor {
     height: 700px;
   }
@@ -681,7 +646,6 @@ nav {
     height: 44px;
   }
 
-  /* h-scroll */
   .h-card img {
     width: 260px;
     height: 300px;
@@ -691,7 +655,6 @@ nav {
     display: none;
   }
 
-  /* collaborations */
   .collaborations {
     height: auto;
     padding-bottom: 30px;
@@ -710,13 +673,9 @@ nav {
     width: 100%;
   }
 
-  /* footer */
   .footer__container {
     flex-direction: column;
     gap: 30px;
     text-align: center;
   }
-
 }
-
-

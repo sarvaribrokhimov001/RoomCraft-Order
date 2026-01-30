@@ -38,15 +38,6 @@ document.querySelector('.index__next__btn').addEventListener('click', () => {
 });
 
 
-
-
-
-
-
-
-
-
-
 const xScroll = document.getElementById("xScroll");
 const xNext = document.getElementById("xNext");
 const xPrev = document.getElementById("xPrev");
@@ -83,16 +74,8 @@ hPrev.addEventListener("click", () => {
 });
 
 
-
-
-
-
-
-
 const searchInput = document.querySelector(".navbar__input");
-const searchableItems = document.querySelectorAll(
-  ".x-card, .h-card, .collaborations__card"
-);
+const searchableItems = document.querySelectorAll(".x-card, .h-card, .collaborations__card");
 
 searchInput.addEventListener("input", () => {
   const value = searchInput.value.toLowerCase().trim();
@@ -107,9 +90,3 @@ searchInput.addEventListener("input", () => {
     }
   });
 });
-
-
-
-
-
-
