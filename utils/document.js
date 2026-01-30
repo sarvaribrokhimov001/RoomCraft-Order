@@ -61,3 +61,33 @@ xPrev.addEventListener("click", () => {
   xScroll.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 });
 
+
+const hScroll = document.getElementById("hScroll");
+const hNext = document.getElementById("hNext");
+const hPrev = document.getElementById("hPrev");
+
+const moveSize = 340;
+
+hNext.addEventListener("click", () => {
+  hScroll.scrollBy({
+    left: moveSize,
+    behavior: "smooth"
+  });
+});
+
+hPrev.addEventListener("click", () => {
+  hScroll.scrollBy({
+    left: -moveSize,
+    behavior: "smooth"
+  });
+});
+
+
+
+
+
+
+
+
+
+
