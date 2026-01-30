@@ -87,12 +87,9 @@ hPrev.addEventListener("click", () => {
 
 
 
-"use strict";
 
-// search input
+
 const searchInput = document.querySelector(".navbar__input");
-
-// qidiriladigan cardlar
 const searchableItems = document.querySelectorAll(
   ".x-card, .h-card, .collaborations__card"
 );
