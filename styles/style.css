@@ -83,6 +83,7 @@ li {
   flex-direction: column;
   gap: 18px;
 }
+
 .index__input {
   padding: 14px 15px;
   font-size: 18px;
@@ -90,12 +91,15 @@ li {
   border-radius: 8px;
   color: red;
 }
+
 .index ::-moz-placeholder {
   color: grey;
 }
+
 .index ::placeholder {
   color: grey;
 }
+
 .index__btn {
   padding: 14px;
   background: #000;
@@ -104,15 +108,18 @@ li {
   border-radius: 8px;
   font-size: 20px;
 }
+
 .index__btn:hover {
   background: #0c28c7;
   color: white;
   transition: all 1s ease;
 }
+
 .index__btn:active {
   background-color: #000;
   color: red;
 }
+
 .index__body {
   font-family: "Poppins";
   background: linear-gradient(150deg, #000000, rgb(15, 15, 15));

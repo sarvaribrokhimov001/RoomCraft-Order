@@ -14,14 +14,13 @@ a {
 }
 
 body {
-  padding-top: 110px; /* navbar height bilan bir xil */
+  padding-top: 110px; 
 }
 
 nav {
   width: 100%;
   background-color: #000;
   box-shadow: 0 2px 15px rgba(0,0,0,0.4);
-
   position: fixed;
   top: 0;
   left: 0;
@@ -33,7 +32,6 @@ nav {
   margin: auto;
   height: 110px;
   padding: 0 30px;
-
   display: flex;
   align-items: center;
   justify-content: space-between; 
@@ -46,17 +44,17 @@ nav {
 }
 
 .navbar__input {
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    padding: 0px 13px;
-    color: red;  
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0px 13px;
+  color: red;  
 }
 
 .navbar__input:focus {
-    background-color: #000;
-    border: 2px solid white;
-    color: red;
+  background-color: #000;
+  border: 2px solid white;
+  color: red;
 }
 
 .navbar__links {
@@ -71,8 +69,8 @@ nav {
 }
 
 .navbar__link:hover {
-    color: red;
-    transition: all 1s ease;
+  color: red;
+  transition: all 1s ease;
 }
 
 .index__paginations {
@@ -178,13 +176,6 @@ nav {
   border: 4px solid cyan;
 }
 
-
-
-
-
-
-
-
 .x-scroll-section {
   position: relative;
   padding: 50px 0;
@@ -195,7 +186,6 @@ nav {
   gap: 30px;
   overflow-x: auto;
   scroll-behavior: smooth;
-
   max-width: 1200px;   
   margin: auto;
   padding: 10px 0;
@@ -237,7 +227,6 @@ nav {
   height: 42px;
   border: none;
   background-color: black;
-  /* color: white; */
   border-radius: 15px;
   font-size: 22px;
   cursor: pointer;
@@ -266,10 +255,6 @@ nav {
   background: #000;
   color: #fff;
 }
-
-
-
-
 
 .layers {
   width: 100%;
@@ -364,13 +349,6 @@ nav {
   color: rgb(33, 32, 32);
   margin: 0px 30px;
 }
-
-
-
-
-
-
-
 
 .h-scroll-section {
   position: relative;
@@ -472,9 +450,6 @@ nav {
   font-size: 18px;
   color: rgb(100, 95, 95);
 }
-
-
-
 
 .footer {
   background: #000;
